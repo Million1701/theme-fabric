@@ -34,11 +34,10 @@
     class="cart-drawer__dialog dialog-modal dialog-drawer color-{{ settings.drawer_color_scheme }}{% if cart.empty? %} cart-drawer--empty{%endif%}"
     scroll-lock
   >
-  {% comment %} <canvas
-    ref="confettiCanvas"
-    id="cart-confetti-canvas"
-    style="position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index:var(--layer-temporary)"
-  ></canvas> {% endcomment %}
+    <canvas
+  ref="confettiCanvas"
+  id="cart-confetti-canvas"
+  ></canvas>
     <div class="cart-drawer__inner">
       <cart-items-component
         class="cart-items-component"
