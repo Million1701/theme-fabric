@@ -1,5 +1,5 @@
 <!-- blocks/_crossell-cart.liquid -->  
-{%- assign block_settings = block.settings -%}  
+{% comment %} {%- assign block_settings = block.settings -%}  
   
 {% capture children %}  
   {% content_for 'blocks' %}  
@@ -11,9 +11,11 @@
      children: children,   
      settings: block_settings,   
      shopify_attributes: block.shopify_attributes %}  
-</div>  
+</div>   {% endcomment %}
 
-{% schema %}  
+
+
+{% comment %} 
 {  
   "name": "Cross-sell Cart",  
   "settings": [  
@@ -36,5 +38,5 @@
       "type": "@theme"  
     }  
   ]  
-}  
-{% endschema %}
+}   {% endcomment %}
+

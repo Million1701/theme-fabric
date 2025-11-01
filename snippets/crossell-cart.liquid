@@ -1,7 +1,6 @@
 
-<div class="cart-cross-sell">
+{% comment %} <div class="cart-cross-sell">
   <h3 class="cart-cross-sell__title">Productos que te pueden interesar</h3>
-
      <crossell-cart>
       <div class="splide splide-crossell-cart" ref="splide">
         <div class="splide__track" ref="track">
@@ -186,13 +185,12 @@
               </li>
             {%- endfor -%}
           </ul>
-        </div>
+        {% comment %} </div>
       </div>
     </crossell-cart> 
-    
-</div>
+</div> {% endcomment %} {% endcomment %}
 
-<style>
+{% comment %} <style>
   .splide-crossell-cart{
     padding: 0 1rem;
   }
@@ -262,4 +260,4 @@
       width: 1.1rem;
     }
   }
-</style>
+</style> {% endcomment %}
